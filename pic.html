@@ -6,11 +6,12 @@
   <style>
     body {
       margin: 0;
-      height: 100vh;
+      min-height: 100vh;
       background: linear-gradient(to bottom right, black 0%, navy 50%, gold 100%);
       display: flex;
       justify-content: center;
       align-items: center;
+      padding: 40px 0;
     }
 
     .gallery {
@@ -20,7 +21,7 @@
     }
 
     .gallery img {
-      width: 300px;
+      width: 100%;
       height: 300px;
       object-fit: cover;
       border: 3px solid gold;
@@ -34,23 +35,22 @@
       box-shadow: 0 0 40px gold;
     }
 
+    /* BIG IMAGE FIXED */
     .third {
-      width: 500px;
+      grid-column: span 2;
       height: 300px;
     }
 
-    
   </style>
-
 </head>
 
 <body>
 
   <div class="gallery">
-    <img src="1.png">
-    <img src="2.jpeg">
-    <img src="3.jpg" class="third">
-    <img src="4.jpg">
+    <img src="1.png" alt="memory 1">
+    <img src="2.jpeg" alt="memory 2">
+    <img src="3.jpg" class="third" alt="memory 3">
+    <img src="4.jpg" alt="memory 4">
   </div>
 
 </body>
