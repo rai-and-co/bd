@@ -10,36 +10,55 @@
       height: 100vh; 
       color: white;
       text-align: center;
+      font-family: Arial, sans-serif;
     }
 
     .heading {
       margin-top: 80px;
-      font-size: 125px;
+      font-size: 100px;
     }
 
-    .text,
-    .pic {
-      background: linear-gradient(to bottom right, gold 100%, navy 50%, black 0%);
-      height: 300px;
-      width: 300px;
-      border-color: white;
-      border-radius: 5px;
-      flex-direction: row;
+    .container {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      margin-top: 50px;
     }
-    
+
+    .box {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-decoration: none;
+      background: linear-gradient(to bottom right, black 0%, navy 50%, gold 100%);
+      height: 200px;
+      width: 200px;
+      border: 2px solid white;
+      border-radius: 10px;
+      color: white;
+      font-size: 20px;
+      transition: 0.3s;
+    }
+
+    .box:hover {
+      transform: scale(1.1);
+      background: linear-gradient(to bottom right, gold 0%, navy 50%, black 100%);
+    }
   </style>
 </head>
 
 <body>
   <h1 class="heading">Happy 41st Birthday Appa!!!</h1>
-    
-    <a href="text.html" class="text">
+
+  <div class="container">
+    <a href="text.html" class="box">
       Paragraph Of Love
     </a>
 
-    <a href="pic.html" class="pictures">
+    <a href="pic.html" class="box">
       Pictures Of Love
     </a>
-  
+  </div>
+
 </body>
 </html>
